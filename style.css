@@ -18,10 +18,10 @@ body {
 	background-color: #ece8e5;
 }
 nav {
-	height: 30px;
-	width: 200%;
+	height: 40px;
+	width: 130%;
 	background: #3498db;
-	font-size: 9pt;
+	font-size: 11pt;
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-weight: bold;
 	position: relative;
@@ -29,7 +29,7 @@ nav {
 nav ul {
 	padding: 0;
 	margin: 0 auto;
-	width: 700px;
+	width: 550px;
 	height: 40px;
 }
 nav li {
@@ -39,7 +39,7 @@ nav li {
 nav a {
 	color: #ffffff;
 	display: inline-block;
-	width: 200px;
+	width: 120px;
 	text-align: center;
 	text-decoration: none;
 	line-height: 40px;
@@ -95,7 +95,7 @@ nav a#pull {
 	nav a#pull:after {
 		content:"";
 		background: url('nav-icon.png') no-repeat;
-		width: 80px;
+		width: 30px;
 		height: 30px;
 		display: inline-block;
 		position: absolute;
