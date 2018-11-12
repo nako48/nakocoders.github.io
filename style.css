@@ -29,7 +29,7 @@ nav {
 nav ul {
 	padding: 0;
 	margin: 0 auto;
-	width: 500px;
+	width: 700px;
 	height: 40px;
 }
 nav li {
@@ -39,7 +39,7 @@ nav li {
 nav a {
 	color: #ffffff;
 	display: inline-block;
-	width: 100px;
+	width: 700px;
 	text-align: center;
 	text-decoration: none;
 	line-height: 40px;
