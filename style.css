@@ -1,75 +1,66 @@
-style.css
 
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
-body {
-    font-size: 14px;
-    font-family: verdana;
 
+*{font-family:arial;list-style-type:none;box-sizing:border-box;}
+.container{margin-top:10%;}
+.nav{
+ width:80%;
+ min-height:20px;
+ background:#0B1E30;
+ margin:0px auto;
+ position:relative;
+ overflow:hidden;
+ border-bottom:5px solid #097279;
 }
-#heading{
-    float: left;
-    width: 640px;
+.tombol{
+ padding:10px;
+ color:#fff;
+ display:none;
+ cursor:pointer;
+ font-size:20px;
+ box-shadow:0 0 5px #fff !important;
+ border-bottom:5px solid #097279;
+ background:#097279;
 }
-#heading a {
-    line-height: 65px;
-    text-decoration: none;
-    padding-left: 60px;
-    color:#FFF;
-    font-family: aardvark cafe;
-    font-size: 40px;
+.tombol > span{
+ background:#0B1E30;
+ padding:0 5px 0 5px;
 }
-#menu {
-    background:#26C4C2;
-    width: 100%;
-    height: 65px;
-    margin: 0px;
-    padding: 0px;
-    
+.menu{
+ float:left;
+ width:100%;
+ background:#0B1E30;
 }
-#menu ul {
-    list-style: none;
-
+.menu > ul{
+ display:block;
+ padding:0;
+ margin:0;
+ list-style-type:none;
 }
-#menu ul li {
-    float: left;
-    line-height: 65px
+.menu > ul > li{
+ display:inline-block;
 }
-#menu ul li a {
-    float:left; 
-    width:100px; 
-    display:block; 
-    text-align:center; 
-    color:#FFF; 
-    text-decoration:none; 
+.menu > ul > li > a{
+ display:block;
+ color:#fff;
+ text-decoration:none;
+ padding:15px 20px;
 }
-#menu ul ul {
-    display:none; 
-    list-style:none; 
-    position:absolute; 
-    background-color:#26C4C2;
-    float: none;
-    top:65px; 
-    width:190px;
+.menu > ul > li > a:hover{
+ background:#097279;
+ color:#fff;
 }
-#menu ul li a:hover {
-    background-color:#2E9EA2; 
-    display:block;
+.show-menu{
+ display:block;
 }
-#menu ul li:hover ul {
-    display:block;
-}
-#menu ul ul li a {
-    display:block;
-    padding-left:30px; 
-    text-align:left; 
-    width:160px;
-    height: 60px;
-    line-height: 60px;
-}
-#menu ul ul li a:hover {
-    color:#fff;
+@media (max-width:600px){
+ .tombol{
+  display:block;
+ }
+ .menu{
+  display:none;
+ }
+ .menu > ul > li{
+  display:block;
+ }
 }
