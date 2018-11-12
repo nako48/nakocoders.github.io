@@ -1,66 +1,105 @@
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/******************************************************/
+/******************** Desain Menu *********************/
+/******************************************************/
+body {
+	background-color: #ece8e5;
+}
+nav {
+	height: 40px;
+	width: 100%;
+	background: #3498db;
+	font-size: 11pt;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-weight: bold;
+	position: relative;
+}
+nav ul {
+	padding: 0;
+	margin: 0 auto;
+	width: 500px;
+	height: 40px;
+}
+nav li {
+	display: inline;
+	float: left;
+}
+nav a {
+	color: #ffffff;
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+}
+nav a:hover, nav a:active {
+	background-color: #ecf0f1;
+	color: #333;
+}
+nav a#pull {
+	display: none;
+}
 
 
+/******************************************************/
+/*************** Desain Menu Responsive ***************/
+/******************************************************/
 
-*{font-family:arial;list-style-type:none;box-sizing:border-box;}
-.container{margin-top:10%;}
-.nav{
- width:80%;
- min-height:20px;
- background:#0B1E30;
- margin:0px auto;
- position:relative;
- overflow:hidden;
- border-bottom:5px solid #097279;
-}
-.tombol{
- padding:10px;
- color:#fff;
- display:none;
- cursor:pointer;
- font-size:20px;
- box-shadow:0 0 5px #fff !important;
- border-bottom:5px solid #097279;
- background:#097279;
-}
-.tombol > span{
- background:#0B1E30;
- padding:0 5px 0 5px;
-}
-.menu{
- float:left;
- width:100%;
- background:#0B1E30;
-}
-.menu > ul{
- display:block;
- padding:0;
- margin:0;
- list-style-type:none;
-}
-.menu > ul > li{
- display:inline-block;
-}
-.menu > ul > li > a{
- display:block;
- color:#fff;
- text-decoration:none;
- padding:15px 20px;
-}
-.menu > ul > li > a:hover{
- background:#097279;
- color:#fff;
-}
-.show-menu{
- display:block;
-}
-@media (max-width:600px){
- .tombol{
-  display:block;
- }
- .menu{
-  display:none;
- }
- .menu > ul > li{
-  display:block;
- }
+/* Desain untuk perangkat dengan layar 600px kebawah*/
+@media screen and (max-width: 600px) {
+	nav {
+  		height: auto;
+  		border-bottom: 0;
+  		background: #3498db;
+  	}
+  	nav ul {
+  		width: 100%;
+  		display: none;
+  		height: auto;
+  	}
+  	nav li {
+  		width: 100%;
+  		float: none;
+  		display: block;
+  		background: #ffffff;
+  	}
+  	nav li a {
+		border-bottom: 1px solid #f0f0f0;
+		border-right: 1px solid #f0f0f0;
+	}
+  	nav a {
+	  	text-align: left;
+	  	width: 100%;
+	  	text-indent: 25px;
+	  	color: #333333;
+  	}
+  	nav a#pull {
+		display: block;
+		background-color: #3498db;
+		width: 100%;
+		position: relative;
+		color: #ffffff;
+	}
+	nav a#pull:after {
+		content:"";
+		background: url('nav-icon.png') no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
 }
