@@ -1,4 +1,3 @@
-// Responsive Menu
 $(".menu-toggle").click(function(e) {
     e.preventDefault();
     $(this).toggleClass("active");
@@ -14,4 +13,4 @@ $("ul.menu >li >ul").siblings("a").prepend("<span class='arrow-bottom'></span>")
 	}
 	else if(document.documentElement.clientWidth > 769){
 	jQuery("ul.menu >li >ul li ul").siblings("a").prepend("<span class='arrow-right'></span>");
-}	
+} 
