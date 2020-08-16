@@ -1,0 +1,53 @@
+body {
+  font-family: 'Pacifico', cursive;
+  background-color: #2B2D42
+}
+
+.effect-text {
+  font-size: 50px;
+  color: #edf2f4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer
+}
+
+.tiny-heart {
+  position: absolute;
+  opacity: 0;
+  background-color: #D90429;
+  box-shadow: 0px 0px 50px 4px transparentize(#EF233C, .3);
+  animation: animated-heart infinite ease-in;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D90429;
+  }
+  &:before {
+    transform: translateX(-50%);
+  }
+  &:after {
+    transform: translateY(-50%)
+  }
+}
+
+@keyframes animated-heart {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(45deg)
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0, -40%) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, -1000%) rotate(45deg);
+  }
+}
